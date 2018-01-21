@@ -4,13 +4,13 @@ import "math"
 
 // Point is used to represent curves
 type Point struct {
-	x float64
-	y float64
+	X float64
+	Y float64
 }
 
 func euclideanDistance(p1 Point, p2 Point) float64 {
-	dx := p2.x - p1.x
-	dy := p2.y - p1.y
+	dx := p2.X - p1.X
+	dy := p2.Y - p1.Y
 	return math.Sqrt(dx*dx + dy*dy)
 }
 
